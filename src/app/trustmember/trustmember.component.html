@@ -1,0 +1,16 @@
+<section class="trusty">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 center">
+                <h1>हमारे <span class="heading-highlight">ट्रस्ट सदस्य </span></h1>
+             </div>
+            <div *ngFor="let list of trustmember; index as i" class="col col-lg-4 col-md-4 col-sm-12">
+                    <img src="assets/images/trust-img-{{i+1}}.jpg" alt="" width="100%">
+                    <h6>{{list.name}}</h6> 
+                    <p>{{list.post}}</p>
+                    <p> {{list.desc}}</p>
+            </div>
+          
+            </div>
+    </div>
+</section>
