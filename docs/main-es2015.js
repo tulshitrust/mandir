@@ -666,7 +666,6 @@ __webpack_require__.r(__webpack_exports__);
 
 let ContactusComponent = class ContactusComponent {
     constructor() {
-        this.mapUrl = "https://maps.google.com/maps?q=ram%20mandir%20aayodya&t=&z=13&ie=UTF8&iwloc=&output=embed";
         this.contactInfo = [
             { title: 'General Informaton', subtitle: 'Inquiry', id: 'info@tulshitrust.com' },
             { title: 'Sales & Learning', subtitle: 'Business development', id: 'sales@tulshitrust.com' },

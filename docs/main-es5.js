@@ -1294,7 +1294,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       function ContactusComponent() {
         _classCallCheck(this, ContactusComponent);
 
-        this.mapUrl = "https://maps.google.com/maps?q=ram%20mandir%20aayodya&t=&z=13&ie=UTF8&iwloc=&output=embed";
         this.contactInfo = [{
           title: 'General Informaton',
           subtitle: 'Inquiry',

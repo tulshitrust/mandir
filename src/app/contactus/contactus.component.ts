@@ -7,9 +7,6 @@ import { Component, OnInit} from '@angular/core';
 })
 
 export class ContactusComponent implements OnInit {
-
-  mapUrl = "https://maps.google.com/maps?q=ram%20mandir%20aayodya&t=&z=13&ie=UTF8&iwloc=&output=embed" ;
-
   contactInfo = [
           {title : 'General Informaton', subtitle : 'Inquiry', id : 'info@tulshitrust.com'},
           {title : 'Sales & Learning', subtitle : 'Business development', id : 'sales@tulshitrust.com'},
@@ -23,8 +20,7 @@ getTouch = [
 ];
 
   constructor() { }
- 
-  ngOnInit() {
+ ngOnInit() {
 
   }
 
