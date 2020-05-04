@@ -1,0 +1,93 @@
+<section class="section-about">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 center">
+                <h1><span class="heading-highlight">तुळशी </span>मंदिर ट्रस्ट </h1>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <img src="assets/images/tulshi-logo.png">
+            </div>
+
+            <div class="col-lg-9 col-md-9 col-sm-12">
+                <h6>
+                    सूचना को यथासंभव सही रूप में उपलब्ध कराने का हर संभव प्रयास किया गया है | इस वेबसाइट पर उपलब्ध
+                    जानकारी में अशुद्धता के कारण किसी भी व्यक्ति को होने वाली किसी भी प्रकार की हानि के लिए केन्द्रीय
+                    मृदा एवं सामग्री अनुसंधानशाला, जल संसाधन, नदी विकास और गंगा संरक्षण विभाग, जल शक्ति मंत्रालय, भारत
+                    सरकार जिम्मेदार नहीं होगा | किसी भी स्पष्टीकरण के लिए सी.एस.एम.आर.एस. से परामर्श लिया जा सकता है |
+                    कोई भी अनियमितता होने पर उसे सी.एस.एम.आर.एस. के संज्ञान में लाएं |<br><br>
+                    सूचना को यथासंभव सही रूप में उपलब्ध कराने का हर संभव प्रयास किया गया है | इस वेबसाइट पर उपलब्ध
+                    जानकारी में अशुद्धता के कारण किसी भी व्यक्ति को होने वाली किसी भी प्रकार की हानि के लिए केन्द्रीय
+                    मृदा एवं सामग्री अनुसंधानशाला, जल संसाधन, नदी विकास और गंगा संरक्षण विभाग, जल शक्ति मंत्रालय, भारत
+                    सरकार जिम्मेदार नहीं होगा | किसी भी स्पष्टीकरण के लिए सी.एस.एम.आर.एस. से परामर्श लिया जा सकता है |
+                    कोई भी अनियमितता होने पर उसे सी.एस.एम.आर.एस. के संज्ञान में लाएं |
+                </h6>
+
+                    <button type="submit" class="btn btn-warning">दान करे</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="gallery">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 center">
+                <h1>चित्र <span class="heading-highlight">प्रदर्शनी </span></h1>
+            </div>
+            <div *ngFor="let item of gallery; index as i" class="{{item.class}} col-sm-12">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <img src="assets/images/gallery{{i+1}}.jpg">
+                    </div>
+                    <div class="panel-body">
+                        <p>{{item.description}}/ <a>
+                            अधिक पढ़ें >></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-about">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 center">
+                <h1><span class="heading-highlight">हमसे  </span>जुड़ें</h1>
+            </div>
+             <div class="col-sm-12 center">
+                <h6>
+                    सूचना को यथासंभव सही रूप में उपलब्ध कराने का हर संभव प्रयास किया गया है | इस वेबसाइट पर उपलब्ध
+                    जानकारी में अशुद्धता के कारण किसी भी व्यक्ति को होने वाली किसी भी प्रकार की हानि के लिए केन्द्रीय
+                    मृदा एवं सामग्री अनुसंधानशाला, जल संसाधन, नदी विकास और गंगा संरक्षण विभाग, जल शक्ति मंत्रालय, भारत
+                    सरकार जिम्मेदार नहीं होगा | किसी भी स्पष्टीकरण के लिए सी.एस.एम.आर.एस. से परामर्श लिया जा सकता है |
+                    कोई भी अनियमितता होने पर उसे सी.एस.एम.आर.एस. के संज्ञान में लाएं 
+                </h6>
+
+                    <button type="submit" class="btn btn-warning">हमसे जुड़ें</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="clear-float"></div>
+<section class="trusty">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 center">
+                <h1>हमारे <span class="heading-highlight">ट्रस्ट सदस्य </span></h1>
+             </div>
+
+            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+                <div ngxSlickItem *ngFor="let list of trustmember; index as i" class="slide col-lg-3 col-md-3 col-sm-12">
+                    <img src="assets/images/trust-img-{{i+1}}.jpg" alt="" width="100%">
+                    <h6>{{list.name}}</h6> 
+                    <p>{{list.post}}</p>
+                    <p> {{list.desc}}</p>
+                </div>
+            </ngx-slick-carousel>
+            </div>
+    </div>
+</section>

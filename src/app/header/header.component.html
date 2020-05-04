@@ -1,0 +1,77 @@
+<div class="main-banner">
+  <a class="navbar-brand" routerLink="home" skipLocationChange=true>
+    <div class="logo-container">
+      <img src="assets/images/tulshi-logo-flat.png">
+    </div>
+  </a>
+  <ngb-carousel #carousel interval="1000" [pauseOnHover]="pauseOnHover" (slide)="onSlide($event)" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+    <ng-template ngbSlide *ngFor="let info of banner; index as i">
+      <div class="container">
+        <!-- <div class="carousel-caption">
+          <h3>{{info.title}}</h3>
+          <h3>{{info.title_2}}</h3>
+          <p>{{info.description}}</p>
+          <button type="submit" class="btn btn-primary">LEARN MORE</button>
+          <button type="submit" class="btn btn-warning">CONTACT US</button>
+        </div> -->
+      </div>
+      <a>
+        <div class="picsum-img-wrapper">
+          <img src="assets/images/main-banner.png" alt="My image {{i + 1}} description">
+        </div>
+      </a>
+    </ng-template>
+  </ngb-carousel>
+</div>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <ul class="navbar-nav-list">
+      <li class="nav-item" *ngFor="let item of list; index as i">
+        <a routerLink="{{item.name}}" routerLinkActive="active"
+        skipLocationChange=true>{{item.name}}</a>
+      </li>
+      <li class="nav-item quick-link">
+        <a class="nav-link" (click)="slideToggel()">
+          <i class="icon icon-ex-small">
+            <svg focusable="false">
+              <use xlink:href="#icon_menu"></use>
+            </svg>
+          </i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="slider-menu" [ngClass]="isOpen ? '' : 'active'">
+  <a class="close-slide" (click)="slideToggel()">
+    <i class="icon icon-ex-small">
+      <svg focusable="false">
+        <use xlink:href="#icon_menu"></use>
+      </svg>
+    </i>
+  </a>
+
+  <a class="navbar-brand">
+    <i class="icon icon-small">
+      <svg focusable="false">
+        <use xlink:href="#icon_logo_color"></use>
+      </svg>
+    </i>
+    <div>
+      <span class="company-name">tulshitrust</span>
+      <span class="company-type">TECHNOLOGIES</span>
+    </div>
+  </a>
+
+  <ul>
+    <li *ngFor="let item of list; index as i" class="menu-list">
+      <a (click)="slideToggel()" routerLink="{{item.name}}" routerLinkActive="active"
+        skipLocationChange=true>{{item.name}}</a>
+    </li>
+  </ul>
+</div>
+<div class="overlay" [ngClass]="isOpen ? '' : 'active'" (click)="slideToggel()">
+</div>

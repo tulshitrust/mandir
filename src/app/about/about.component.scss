@@ -1,0 +1,17 @@
+.video-gallery, .section-about{
+    padding:70px 0;
+}
+
+.video-gallery{
+    background:#e5f0fa;
+}
+
+.social-work{
+    .row{
+        &+.row{
+            margin-bottom:30px;
+            border-top:1px dashed #e5f0fa;
+            padding-top:30px;
+        }
+    }
+}

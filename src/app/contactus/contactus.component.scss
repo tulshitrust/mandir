@@ -1,0 +1,27 @@
+.section-contact{
+    form{
+        h1{
+            margin-bottom:50px;
+            font-weight:normal;
+        }
+        margin:70px 0;
+        button{
+            margin:30px auto 0;
+            display: table;
+        }   
+    
+    }
+}
+
+.mapouter{
+    width:100% !important;
+    height:300px !important;
+    margin-top:70px;
+    .gmap_canvas{
+        height:300px !important;
+        iframe{
+            width:100%;
+            height:100%;
+        }
+    }
+}

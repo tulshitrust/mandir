@@ -1,0 +1,42 @@
+<section class="client-info">
+    <div class="container">
+
+        <div class="col-sm-12 center">
+            <h1>चित्र <span class="heading-highlight">प्रदर्शनी </span></h1>
+        </div>
+
+        <div class="row">
+            <div *ngFor="let data of clientInfo; index as i" class="col-lg-4 col-md-4 col-sm-12">
+                <div class="panel">
+                   <div class="panel-body {{data.clientimg}}-{{i+1}}">
+                       <a><img src="assets/images/gallery{{i+1}}.jpg"></a>
+                    </div>
+             </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="client-speak">
+    <div class="container">
+        <div class="col-sm-12 center">
+            <h1>चलचित्र <span class="heading-highlight">प्रदर्शनी </span></h1>
+        </div>
+        <div class="row">
+           <div class="col-lg-6 col-md-6 col-sm-12">
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/bE_MwaDJXqk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/bE_MwaDJXqk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             </div>
+             <div class="col-lg-6 col-md-6 col-sm-12">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/bE_MwaDJXqk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             </div>
+             <div class="col-lg-6 col-md-6 col-sm-12">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/bE_MwaDJXqk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             </div>
+        </div>
+        
+    </div>
+</section>

@@ -1,0 +1,122 @@
+<div class="inner-banner">
+    <img src="assets/images/inner-banner-news.jpg">
+    <div class="page-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 center">
+        <h1>News Update</h1>
+        <h6>News, Press release and Media reports</h6>
+    </div></div></div>
+    </div>
+</div>
+<div class="container section-news">
+    <div class="row">
+        <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+            <li [ngbNavItem]="1">
+              <a ngbNavLink>News</a>
+              <ng-template ngbNavContent>
+                <li *ngFor="let data of news; index as i" class="p2 grid-li">
+                    <div class="panel">
+                        <div class="panel-heading">
+                           <img src={{data.img}}-{{i+1}}.jpg alt="{{data.subtitle}}">
+                        </div>
+                        <div class="panel-body">
+                            <p>{{data.desc_1}}</p>
+                            <p>{{data.desc_2}}</p>
+                           
+                        </div>
+                 </div>
+                </li>
+            </ng-template>
+            </li>
+            <li [ngbNavItem]="2">
+                <a ngbNavLink>Events</a>
+                <ng-template ngbNavContent>
+                  <li *ngFor="let data of news; index as i" class="p2">
+                      <div class="panel">
+                          <div class="panel-heading">
+                             <img src={{data.img}}-{{i+1}}.jpg alt="{{data.subtitle}}">
+                          </div>
+                          <div class="panel-body">
+                              <p>{{data.desc_1}}</p>
+                              <p>{{data.desc_2}}</p>
+                             
+                          </div>
+                   </div>
+                  </li>
+              </ng-template>
+              </li>
+              <li [ngbNavItem]="3">
+                <a ngbNavLink>Webinars</a>
+                <ng-template ngbNavContent>
+                  <li *ngFor="let data of news; index as i" class="p2">
+                      <div class="panel">
+                          <div class="panel-heading">
+                             <img src={{data.img}}-{{i+1}}.jpg alt="{{data.subtitle}}">
+                          </div>
+                          <div class="panel-body">
+                              <p>{{data.desc_1}}</p>
+                              <p>{{data.desc_2}}</p>
+                             
+                          </div>
+                   </div>
+                  </li>
+              </ng-template>
+              </li>
+              <li [ngbNavItem]="4">
+                <a ngbNavLink>Press Releases</a>
+                <ng-template ngbNavContent>
+                  <li *ngFor="let data of news; index as i" class="p2">
+                      <div class="panel">
+                          <div class="panel-heading">
+                             <img src={{data.img}}-{{i+1}}.jpg alt="{{data.subtitle}}">
+                          </div>
+                          <div class="panel-body">
+                              <p>{{data.desc_1}}</p>
+                              <p>{{data.desc_2}}</p>
+                             
+                          </div>
+                   </div>
+                  </li>
+              </ng-template>
+              </li>
+              <li [ngbNavItem]="5">
+                <a ngbNavLink>Video Gallery</a>
+                <ng-template ngbNavContent>
+                  <li *ngFor="let data of news; index as i" class="p2">
+                      <div class="panel">
+                          <div class="panel-heading">
+                             <img src={{data.img}}-{{i+1}}.jpg alt="{{data.subtitle}}">
+                          </div>
+                          <div class="panel-body">
+                              <p>{{data.desc_1}}</p>
+                              <p>{{data.desc_2}}</p>
+                             
+                          </div>
+                   </div>
+                  </li>
+              </ng-template>
+              </li>
+          </ul>
+          
+          <div [ngbNavOutlet]="nav" class="mt-4"></div>
+    </div>
+</div>
+
+<section class="news-video">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zmEG-5zEmPw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <h6 class="center">
+                    tulshitrust Technologies has a very ambitious plan for future and we are looking for energetic, motivated, ambitious team players who relish the challenge of joining a growing business in the field of IT, Resourcing and Training. You will have the opportunity to grow professionally and financially.
+                </h6>
+            </div>
+        </div>
+    </div>
+</section>
+  

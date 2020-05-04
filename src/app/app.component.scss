@@ -1,0 +1,165 @@
+body{
+	color:#555555;
+	font-family: 'Mukta', sans-serif;
+	font-size:14px;
+}
+ul{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+.btn{
+	font-weight:bold;
+}
+h1{
+	font-size:40px;
+}
+h2{
+	font-size:34px;
+}
+h3{
+	font-size:30px;
+}
+h4{
+	font-size:26px;
+}
+h5{
+	font-size:22px;
+}
+h6{
+	font-size:18px; 
+	line-height: 32px;
+}
+h1{
+	font-weight:bold;
+}
+.center{
+	text-align: center; 
+}	
+.heading-highlight{
+    color:#97070e;
+}
+.btn{
+	border-radius: 30px;
+    padding: 10px 30px;
+}
+svg {
+	vertical-align: middle;
+	margin: auto;
+	align-content: center;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+.icon-big>svg {
+	width: 100px;
+	height: 100px;
+}
+.icon-medium>svg {
+	width: 50px;
+	height: 50px;
+}
+.icon-small>svg {
+	width: 34px;
+	height: 34px;
+}
+.icon-ex-small>svg {
+	width: 24px;
+	height: 24px;
+}
+
+.slick-slider {
+	width: 100%;
+	margin: auto;
+  }
+
+  .inner-banner{
+    margin-top:70px;
+    position:relative;
+    img{
+        width:100%;
+    }
+    .page-title{
+        position: absolute;
+        bottom: 60px;
+        background:rgb(255, 255, 255, 0.5);
+        width: 100%;
+        padding: 70px 0;
+        color:#214f7a;
+    }
+}
+input.form-control{
+	border-radius: 150px;
+}
+
+textarea.form-control{
+	border-radius: 15px;
+	resize: none;
+}
+
+
+.main-banner{
+
+	.navbar-brand{
+		position: absolute;
+		top:50px;
+		left:0px;
+		width:100%;
+		z-index:11;
+		.logo-container{
+			margin:0 auto;
+			display:table;
+			width:100px;
+			img{
+				width:100%;
+			}
+			}
+	}
+
+	.carousel{
+		margin-top:-60px;
+		z-index:1;
+	}
+	.picsum-img-wrapper{
+		position: absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		img{
+			width:100%;
+			height:100%;
+		}
+	}
+	.container{
+		position: relative;
+		height: 500px;
+		
+    }
+    .carousel-inner{
+        height: 500px;
+    }
+	.carousel-caption {
+		right: auto;
+		bottom:auto;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		z-index: 10;
+		color: #fff;
+		text-align: left;
+		width: 600px;
+		h3:first-child{
+			color: #FFC100;
+		}
+		.btn{
+			border:2px solid #fff;
+			margin-right: 15px;
+    		margin-top: 50px;
+		}
+	}
+}
+
+img{
+	width:100%;
+}
